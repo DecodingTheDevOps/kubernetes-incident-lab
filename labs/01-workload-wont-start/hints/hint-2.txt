@@ -1,0 +1,1 @@
+Look for a referenced object name in the pod specification and compare it with the objects that actually exist in namespace `incident-01`.

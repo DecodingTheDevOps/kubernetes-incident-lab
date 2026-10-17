@@ -1,0 +1,2 @@
+A workload can look like a capacity problem when something it depends on is unavailable.
+Read the Pod's earliest failing stage before you believe the first theory in the ticket.

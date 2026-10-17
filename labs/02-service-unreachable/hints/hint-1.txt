@@ -1,0 +1,1 @@
+Check whether the pods themselves are healthy before changing the Service.

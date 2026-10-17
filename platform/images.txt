@@ -1,0 +1,10 @@
+# Images used by the incidents. `./lab.sh setup` pulls any that are missing locally
+# and loads them into the kind nodes, so the lab works offline afterwards and a
+# registry rate limit can never masquerade as Incident 03.
+# One image per line; lines starting with # are ignored.
+nginx:1.27-alpine
+busybox:1.36
+python:3.12-alpine
+rancher/local-path-provisioner:v0.0.28
+nginx:1.26-alpine
+busybox:1.36.1

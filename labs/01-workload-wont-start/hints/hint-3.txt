@@ -1,0 +1,1 @@
+The pod refers to the same configuration object through both an environment variable and a mounted volume. Check whether that object exists, then decide how to restore the dependency.

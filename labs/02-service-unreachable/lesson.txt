@@ -1,0 +1,2 @@
+Running Pods do not prove that a Service can route to them.
+Follow the request path link by link: client, Service, endpoints, Pod port.

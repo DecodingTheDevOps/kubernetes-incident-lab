@@ -1,0 +1,1 @@
+Follow client → Service → EndpointSlice → pod. Find the first layer where the expected relationship disappears.

@@ -1,0 +1,40 @@
+# Copyright (c) 2026 DecodingDevOps. Free sample, see LICENSE.md.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: report-settings
+  namespace: incident-01
+data:
+  mode: standard
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: report-api
+  namespace: incident-01
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: report-api
+  template:
+    metadata:
+      labels:
+        app: report-api
+    spec:
+      containers:
+      - name: report-api
+        image: nginx:1.27-alpine
+        env:
+        - name: REPORT_MODE
+          valueFrom:
+            configMapKeyRef:
+              name: report-settings
+              key: mode
+        volumeMounts:
+        - name: settings
+          mountPath: /etc/report-settings
+      volumes:
+      - name: settings
+        configMap:
+          name: report-settings
