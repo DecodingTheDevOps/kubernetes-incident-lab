@@ -65,7 +65,7 @@ Run the lab: it creates a three-node cluster inside Docker on your computer with
 Troubleshooting is a large part of the CKA exam, and these incidents exercise the same `kubectl` investigation skills. It is practice material, not official exam content.
 
 **Which versions does it use?**
-It was tested with kind v0.18.0 (Kubernetes v1.26.3), Docker and kubectl. Newer kind versions normally work but start a newer Kubernetes that has not been tested.
+It was tested with kind v0.18.0 (Kubernetes v1.34.x), Docker and kubectl. Newer kind versions normally work but start a newer Kubernetes that has not been tested.
 
 **Something doesn't work. Where do I ask?**
 Open an issue and include the output of `./lab.sh doctor`.
